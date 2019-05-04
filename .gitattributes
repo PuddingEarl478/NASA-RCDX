@@ -1,0 +1,4 @@
+﻿# Auto detect text files and perform LF normalization
+* text=auto
+UDP filter=lfs diff=lfs merge=lfs -text
+ReceiverLibrarymetadata18/c/Users/jjack/Documents/Development/NASA-RCDX/UDP[[:space:]]Receiver/Library/metadata/18/18ec2d52be8f4524a97c25a2ed27838e filter=lfs diff=lfs merge=lfs -text
