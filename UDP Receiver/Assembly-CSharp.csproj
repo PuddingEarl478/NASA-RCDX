@@ -64,8 +64,57 @@
   <ItemGroup>
     <Compile Include="Assets\ColorSkies\Demo\Scripts\LookCamera.cs" />
     <Compile Include="Assets\ColorSkies\Demo\Scripts\SkyboxChanger.cs" />
+    <Compile Include="Assets\Infinity Code\Real World Terrain\Scripts\Containers\RealWorldTerrainBuilding.cs" />
+    <Compile Include="Assets\Infinity Code\Real World Terrain\Scripts\Containers\RealWorldTerrainBuildR2Material.cs" />
+    <Compile Include="Assets\Infinity Code\Real World Terrain\Scripts\Containers\RealWorldTerrainBuildRBuilding.cs" />
+    <Compile Include="Assets\Infinity Code\Real World Terrain\Scripts\Containers\RealWorldTerrainContainer.cs" />
+    <Compile Include="Assets\Infinity Code\Real World Terrain\Scripts\Containers\RealWorldTerrainGeocodingObject.cs" />
+    <Compile Include="Assets\Infinity Code\Real World Terrain\Scripts\Containers\RealWorldTerrainItem.cs" />
+    <Compile Include="Assets\Infinity Code\Real World Terrain\Scripts\Containers\RealWorldTerrainMonoBase.cs" />
+    <Compile Include="Assets\Infinity Code\Real World Terrain\Scripts\Containers\RealWorldTerrainPOIItem.cs" />
+    <Compile Include="Assets\Infinity Code\Real World Terrain\Scripts\Containers\RealWorldTerrainRoadArchitectNode.cs" />
+    <Compile Include="Assets\Infinity Code\Real World Terrain\Scripts\ExtraTypes\RealWorldTerrainGeoRect.cs" />
+    <Compile Include="Assets\Infinity Code\Real World Terrain\Scripts\ExtraTypes\RealWorldTerrainWWW.cs" />
+    <Compile Include="Assets\Infinity Code\Real World Terrain\Scripts\ExtraTypes\RealWorldTerrainWWWHelper.cs" />
+    <Compile Include="Assets\Infinity Code\Real World Terrain\Scripts\OSM\RealWorldTerrainOSMBase.cs" />
+    <Compile Include="Assets\Infinity Code\Real World Terrain\Scripts\OSM\RealWorldTerrainOSMMeta.cs" />
+    <Compile Include="Assets\Infinity Code\Real World Terrain\Scripts\OSM\RealWorldTerrainOSMMetaTag.cs" />
+    <Compile Include="Assets\Infinity Code\Real World Terrain\Scripts\OSM\RealWorldTerrainOSMNode.cs" />
+    <Compile Include="Assets\Infinity Code\Real World Terrain\Scripts\OSM\RealWorldTerrainOSMRelation.cs" />
+    <Compile Include="Assets\Infinity Code\Real World Terrain\Scripts\OSM\RealWorldTerrainOSMRelationMember.cs" />
+    <Compile Include="Assets\Infinity Code\Real World Terrain\Scripts\OSM\RealWorldTerrainOSMTag.cs" />
+    <Compile Include="Assets\Infinity Code\Real World Terrain\Scripts\OSM\RealWorldTerrainOSMWay.cs" />
+    <Compile Include="Assets\Infinity Code\Real World Terrain\Scripts\Tools\RealWorldTerrainLookLngLat.cs" />
+    <Compile Include="Assets\Infinity Code\Real World Terrain\Scripts\Utils\RealWorldTerrainBuildingMaterial.cs" />
+    <Compile Include="Assets\Infinity Code\Real World Terrain\Scripts\Utils\RealWorldTerrainBuildingPrefab.cs" />
+    <Compile Include="Assets\Infinity Code\Real World Terrain\Scripts\Utils\RealWorldTerrainBuildRPresetsItem.cs" />
+    <Compile Include="Assets\Infinity Code\Real World Terrain\Scripts\Utils\RealWorldTerrainCultureInfo.cs" />
+    <Compile Include="Assets\Infinity Code\Real World Terrain\Scripts\Utils\RealWorldTerrainEnums.cs" />
+    <Compile Include="Assets\Infinity Code\Real World Terrain\Scripts\Utils\RealWorldTerrainGPXObject.cs" />
+    <Compile Include="Assets\Infinity Code\Real World Terrain\Scripts\Utils\RealWorldTerrainPOI.cs" />
+    <Compile Include="Assets\Infinity Code\Real World Terrain\Scripts\Utils\RealWorldTerrainPrefsBase.cs" />
+    <Compile Include="Assets\Infinity Code\Real World Terrain\Scripts\Utils\RealWorldTerrainRangeI.cs" />
+    <Compile Include="Assets\Infinity Code\Real World Terrain\Scripts\Utils\RealWorldTerrainReflectionHelper.cs" />
+    <Compile Include="Assets\Infinity Code\Real World Terrain\Scripts\Utils\RealWorldTerrainTimer.cs" />
+    <Compile Include="Assets\Infinity Code\Real World Terrain\Scripts\Utils\RealWorldTerrainTriangulator.cs" />
+    <Compile Include="Assets\Infinity Code\Real World Terrain\Scripts\Utils\RealWorldTerrainUtils.cs" />
+    <Compile Include="Assets\Infinity Code\Real World Terrain\Scripts\Utils\RealWorldTerrainVector2i.cs" />
+    <Compile Include="Assets\Infinity Code\Real World Terrain\Scripts\Utils\RealWorldTerrainXMLExt.cs" />
+    <Compile Include="Assets\Infinity Code\Real World Terrain\Scripts\WebServices\Base\RealWorldTerrainTextWebServiceBase.cs" />
+    <Compile Include="Assets\Infinity Code\Real World Terrain\Scripts\WebServices\Base\RealWorldTerrainWebServiceBase.cs" />
+    <Compile Include="Assets\Infinity Code\Real World Terrain\Scripts\WebServices\RealWorldTerrainGoogleGeocoding.cs" />
+    <Compile Include="Assets\Infinity Code\Real World Terrain\Scripts\WebServices\RealWorldTerrainGooglePlaceDetails.cs" />
+    <Compile Include="Assets\Infinity Code\Real World Terrain\Scripts\WebServices\RealWorldTerrainGooglePlacePhoto.cs" />
+    <Compile Include="Assets\Infinity Code\Real World Terrain\Scripts\WebServices\RealWorldTerrainGooglePlaces.cs" />
+    <Compile Include="Assets\Infinity Code\Real World Terrain\Scripts\WebServices\Results\RealWorldTerrainGoogleGeocodingResult.cs" />
+    <Compile Include="Assets\Infinity Code\Real World Terrain\Scripts\WebServices\Results\RealWorldTerrainGooglePlaceDetailsResult.cs" />
+    <Compile Include="Assets\Infinity Code\Real World Terrain\Scripts\WebServices\Results\RealWorldTerrainPlacesResult.cs" />
+    <Compile Include="Assets\Infinity Code\Real World Terrain\Scripts\XML\RealWorldTerrainXML.cs" />
+    <Compile Include="Assets\Infinity Code\Real World Terrain\Scripts\XML\RealWorldTerrainXMLList.cs" />
+    <Compile Include="Assets\Infinity Code\Real World Terrain\Scripts\XML\RealWorldTerrainXMLNamespaceManager.cs" />
     <Compile Include="Assets\Scripts\CameraManager.cs" />
     <Compile Include="Assets\Scripts\Receiver.cs" />
+    <Compile Include="Assets\Scripts\SceneLoader.cs" />
     <Compile Include="Assets\VFX\EffectExamples\Misc Effects\Scripts\SpawnEffect.cs" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface-Mobile.shader" />
     <None Include="Assets\TextMesh Pro\Resources\LineBreaking Leading Characters.txt" />
@@ -85,6 +134,7 @@
     <None Include="Assets\VFX\EffectExamples\Magic Effects\Shaders\Ice.shader" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Bitmap.shader" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro.cginc" />
+    <None Include="Assets\Infinity Code\Real World Terrain\Shaders\Water.shader" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF.shader" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile.shader" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Sprite.shader" />
@@ -323,6 +373,9 @@
     </Reference>
     <Reference Include="NasaReader">
       <HintPath>D:/Development/NASA-RCDX/UDP Receiver/Assets/NasaReader.dll</HintPath>
+    </Reference>
+    <Reference Include="Zip">
+      <HintPath>D:/Development/NASA-RCDX/UDP Receiver/Assets/Infinity Code/Real World Terrain/Zip.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.Advertisements">
       <HintPath>D:/Development/NASA-RCDX/UDP Receiver/Library/PackageCache/com.unity.ads@2.3.1/Runtime/UnityEngine.Advertisements.dll</HintPath>

@@ -84,35 +84,36 @@ public class Receiver : MonoBehaviour {
 	}
 
 	public static UnityEngine.Quaternion ConvertToQuaternion(NasaReader.Quaternion _quaternion) {
-		return new UnityEngine.Quaternion((float)_quaternion.x, (float)_quaternion.y, (float)_quaternion.z, (float)_quaternion.w);
+		UnityEngine.Quaternion _quat = new UnityEngine.Quaternion((float)_quaternion.x, (float)_quaternion.y, (float)_quaternion.z, (float)_quaternion.w);
+		return _quat;
 	}
 
 	private IEnumerator LerpValues(StreamData _data) {
 		for (int i = 0; i < 60; i++) {
-			commandModule.position = UnityEngine.Vector3.Lerp(commandModule.position, ConvertToVector(_data.CMPos), Time.deltaTime);
+			commandModule.localPosition = UnityEngine.Vector3.Lerp(commandModule.position, ConvertToVector(_data.CMPos), Time.deltaTime);
 
 			cmLatitudeText.text = "Latitude: " + Math.Round(_data.CMPos.Lat, 4) + " radians";
 			cmLongitudeText.text = "Longitude: " + Math.Round(_data.CMPos.Lon, 4) + " radians";
 			cmAltitudeText.text = "Altitude: " + Math.Round(_data.CMPos.Alt, 0) + " feet";
 
-			commandModule.rotation = UnityEngine.Quaternion.Lerp(commandModule.rotation, ConvertToQuaternion(_data.CMRot), Time.deltaTime);
+			commandModule.localRotation = UnityEngine.Quaternion.Lerp(commandModule.rotation, ConvertToQuaternion(_data.CMRot), Time.deltaTime);
 
 
-			launchAbortSystem.position = UnityEngine.Vector3.Lerp(launchAbortSystem.position, ConvertToVector(_data.LASPos), Time.deltaTime);
+			launchAbortSystem.localPosition = UnityEngine.Vector3.Lerp(launchAbortSystem.position, ConvertToVector(_data.LASPos), Time.deltaTime);
 
 			lasLatitudeText.text = "Latitude: " + Math.Round(_data.CMPos.Lat, 4) + " radians";
 			lasLongitudeText.text = "Longitude: " + Math.Round(_data.CMPos.Lon, 4) + " radians";
 			lasAltitudeText.text = "Altitude: " + Math.Round(_data.CMPos.Alt, 0) + " feet";
 
-			launchAbortSystem.rotation = launchAbortSystem.rotation = UnityEngine.Quaternion.Lerp(launchAbortSystem.rotation, ConvertToQuaternion(_data.LASRot), Time.deltaTime);
+			launchAbortSystem.localRotation = launchAbortSystem.rotation = UnityEngine.Quaternion.Lerp(launchAbortSystem.rotation, ConvertToQuaternion(_data.LASRot), Time.deltaTime);
 
-			booster.position = UnityEngine.Vector3.Lerp(booster.position, ConvertToVector(_data.BoosterPos), Time.deltaTime);
+			booster.localPosition = UnityEngine.Vector3.Lerp(booster.position, ConvertToVector(_data.BoosterPos), Time.deltaTime);
 
 			boosterLatitudeText.text = "Latitude: " + Math.Round(_data.CMPos.Lat, 4) + " radians";
 			boosterLongitudeText.text = "Longitude: " + Math.Round(_data.CMPos.Lon, 4) + " radians";
 			boosterAltitudeText.text = "Altitude: " + Math.Round(_data.CMPos.Alt, 0) + " feet";
 
-			booster.rotation = UnityEngine.Quaternion.Lerp(booster.rotation, ConvertToQuaternion(_data.BoosterRot), Time.deltaTime);
+			booster.localRotation = UnityEngine.Quaternion.Lerp(booster.rotation, ConvertToQuaternion(_data.BoosterRot), Time.deltaTime);
 
 			yield return new WaitForFixedUpdate();
 		}

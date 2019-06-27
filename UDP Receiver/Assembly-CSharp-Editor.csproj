@@ -62,49 +62,147 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\DecalSystem\Plugins\DecalSystem\Editor\DecalEditor.cs" />
-    <Compile Include="Assets\DecalSystem\Plugins\DecalSystem\Editor\Helpers\GUIUtils.cs" />
-    <Reference Include="Unity.TextMeshPro.Editor">
-      <HintPath>C:/Users/jjack/Documents/Development/NASA-RCDX/UDP Receiver/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.PackageManagerUI.Editor">
-      <HintPath>C:/Users/jjack/Documents/Development/NASA-RCDX/UDP Receiver/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.CollabProxy.Editor">
-      <HintPath>C:/Users/jjack/Documents/Development/NASA-RCDX/UDP Receiver/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.TextMeshPro">
-      <HintPath>C:/Users/jjack/Documents/Development/NASA-RCDX/UDP Receiver/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Analytics.DataPrivacy">
-      <HintPath>C:/Users/jjack/Documents/Development/NASA-RCDX/UDP Receiver/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll</HintPath>
-    </Reference>
+    <Compile Include="Assets\Infinity Code\Real World Terrain\Scripts\Editor\Editors\RealWorldTerrainBuildingEditor.cs" />
+    <Compile Include="Assets\Infinity Code\Real World Terrain\Scripts\Editor\Editors\RealWorldTerrainContainerEditor.cs" />
+    <Compile Include="Assets\Infinity Code\Real World Terrain\Scripts\Editor\Editors\RealWorldTerrainItemEditor.cs" />
+    <Compile Include="Assets\Infinity Code\Real World Terrain\Scripts\Editor\Editors\RealWorldTerrainLookLngLatEditor.cs" />
+    <Compile Include="Assets\Infinity Code\Real World Terrain\Scripts\Editor\Editors\RealWorldTerrainMetaEditor.cs" />
+    <Compile Include="Assets\Infinity Code\Real World Terrain\Scripts\Editor\Editors\RealWorldTerrainRoadArchitectNodeEditor.cs" />
+    <Compile Include="Assets\Infinity Code\Real World Terrain\Scripts\Editor\Generators\RealWorldTerrainArcGISElevationGenerator.cs" />
+    <Compile Include="Assets\Infinity Code\Real World Terrain\Scripts\Editor\Generators\RealWorldTerrainBingElevationGenerator.cs" />
+    <Compile Include="Assets\Infinity Code\Real World Terrain\Scripts\Editor\Generators\RealWorldTerrainBuildingGenerator.cs" />
+    <Compile Include="Assets\Infinity Code\Real World Terrain\Scripts\Editor\Generators\RealWorldTerrainBuildingPrefabGenerator.cs" />
+    <Compile Include="Assets\Infinity Code\Real World Terrain\Scripts\Editor\Generators\RealWorldTerrainBuildR2Generator.cs" />
+    <Compile Include="Assets\Infinity Code\Real World Terrain\Scripts\Editor\Generators\RealWorldTerrainElevationGenerator.cs" />
+    <Compile Include="Assets\Infinity Code\Real World Terrain\Scripts\Editor\Generators\RealWorldTerrainGaiaStampGenerator.cs" />
+    <Compile Include="Assets\Infinity Code\Real World Terrain\Scripts\Editor\Generators\RealWorldTerrainGrassGenerator.cs" />
+    <Compile Include="Assets\Infinity Code\Real World Terrain\Scripts\Editor\Generators\RealWorldTerrainMapboxElevationGenerator.cs" />
+    <Compile Include="Assets\Infinity Code\Real World Terrain\Scripts\Editor\Generators\RealWorldTerrainMeshGenerator.cs" />
+    <Compile Include="Assets\Infinity Code\Real World Terrain\Scripts\Editor\Generators\RealWorldTerrainProceduralToolkitBuildingGenerator.cs" />
+    <Compile Include="Assets\Infinity Code\Real World Terrain\Scripts\Editor\Generators\RealWorldTerrainRAWGenerator.cs" />
+    <Compile Include="Assets\Infinity Code\Real World Terrain\Scripts\Editor\Generators\RealWorldTerrainRiverGenerator.cs" />
+    <Compile Include="Assets\Infinity Code\Real World Terrain\Scripts\Editor\Generators\RealWorldTerrainRoadGenerator.cs" />
+    <Compile Include="Assets\Infinity Code\Real World Terrain\Scripts\Editor\Generators\RealWorldTerrainSRTM30ElevationGenerator.cs" />
+    <Compile Include="Assets\Infinity Code\Real World Terrain\Scripts\Editor\Generators\RealWorldTerrainSRTMElevationGenerator.cs" />
+    <Compile Include="Assets\Infinity Code\Real World Terrain\Scripts\Editor\Generators\RealWorldTerrainTextureGenerator.cs" />
+    <Compile Include="Assets\Infinity Code\Real World Terrain\Scripts\Editor\Generators\RealWorldTerrainTreesGenerator.cs" />
+    <Compile Include="Assets\Infinity Code\Real World Terrain\Scripts\Editor\Generators\RealWorldTerrainVegetationStudioGrassGenerator.cs" />
+    <Compile Include="Assets\Infinity Code\Real World Terrain\Scripts\Editor\Generators\RealWorldTerrainVegetationStudioTreesGenerator.cs" />
+    <Compile Include="Assets\Infinity Code\Real World Terrain\Scripts\Editor\Generators\RealWorldTerrainVolumeGrassGenerator.cs" />
+    <Compile Include="Assets\Infinity Code\Real World Terrain\Scripts\Editor\Net\RealWorldTerrainDownloadItem.cs" />
+    <Compile Include="Assets\Infinity Code\Real World Terrain\Scripts\Editor\Net\RealWorldTerrainDownloadItemAction.cs" />
+    <Compile Include="Assets\Infinity Code\Real World Terrain\Scripts\Editor\Net\RealWorldTerrainDownloadItemUnityWebRequest.cs" />
+    <Compile Include="Assets\Infinity Code\Real World Terrain\Scripts\Editor\Net\RealWorldTerrainDownloadItemWebClient.cs" />
+    <Compile Include="Assets\Infinity Code\Real World Terrain\Scripts\Editor\Net\RealWorldTerrainDownloadManager.cs" />
+    <Compile Include="Assets\Infinity Code\Real World Terrain\Scripts\Editor\Phases\RealWorldTerrainAdjustEdgesPhase.cs" />
+    <Compile Include="Assets\Infinity Code\Real World Terrain\Scripts\Editor\Phases\RealWorldTerrainDownloadingPhase.cs" />
+    <Compile Include="Assets\Infinity Code\Real World Terrain\Scripts\Editor\Phases\RealWorldTerrainFinishPhase.cs" />
+    <Compile Include="Assets\Infinity Code\Real World Terrain\Scripts\Editor\Phases\RealWorldTerrainGenerateBuildingsPhase.cs" />
+    <Compile Include="Assets\Infinity Code\Real World Terrain\Scripts\Editor\Phases\RealWorldTerrainGenerateGaiaStampPhase.cs" />
+    <Compile Include="Assets\Infinity Code\Real World Terrain\Scripts\Editor\Phases\RealWorldTerrainGenerateGrassPhase.cs" />
+    <Compile Include="Assets\Infinity Code\Real World Terrain\Scripts\Editor\Phases\RealWorldTerrainGenerateHeightmapsPhase.cs" />
+    <Compile Include="Assets\Infinity Code\Real World Terrain\Scripts\Editor\Phases\RealWorldTerrainGenerateMeshesPhase.cs" />
+    <Compile Include="Assets\Infinity Code\Real World Terrain\Scripts\Editor\Phases\RealWorldTerrainGenerateMeshVerticesPhase.cs" />
+    <Compile Include="Assets\Infinity Code\Real World Terrain\Scripts\Editor\Phases\RealWorldTerrainGenerateRAWPhase.cs" />
+    <Compile Include="Assets\Infinity Code\Real World Terrain\Scripts\Editor\Phases\RealWorldTerrainGenerateRiversPhase.cs" />
+    <Compile Include="Assets\Infinity Code\Real World Terrain\Scripts\Editor\Phases\RealWorldTerrainGenerateRoadsPhase.cs" />
+    <Compile Include="Assets\Infinity Code\Real World Terrain\Scripts\Editor\Phases\RealWorldTerrainGenerateTerrainsPhase.cs" />
+    <Compile Include="Assets\Infinity Code\Real World Terrain\Scripts\Editor\Phases\RealWorldTerrainGenerateTexturesPhase.cs" />
+    <Compile Include="Assets\Infinity Code\Real World Terrain\Scripts\Editor\Phases\RealWorldTerrainGenerateTreesPhase.cs" />
+    <Compile Include="Assets\Infinity Code\Real World Terrain\Scripts\Editor\Phases\RealWorldTerrainInstantiateMeshesPhase.cs" />
+    <Compile Include="Assets\Infinity Code\Real World Terrain\Scripts\Editor\Phases\RealWorldTerrainLoadHeightmapPhase.cs" />
+    <Compile Include="Assets\Infinity Code\Real World Terrain\Scripts\Editor\Phases\RealWorldTerrainLoadTerrainsPhase.cs" />
+    <Compile Include="Assets\Infinity Code\Real World Terrain\Scripts\Editor\Phases\RealWorldTerrainPhase.cs" />
+    <Compile Include="Assets\Infinity Code\Real World Terrain\Scripts\Editor\Phases\RealWorldTerrainUnzipHeightmapPhase.cs" />
+    <Compile Include="Assets\Infinity Code\Real World Terrain\Scripts\Editor\Providers\RealWorldTerrainTextureProviderManager.cs" />
+    <Compile Include="Assets\Infinity Code\Real World Terrain\Scripts\Editor\Tools\Base\RealWorldTerrainBaseContainerTool.cs" />
+    <Compile Include="Assets\Infinity Code\Real World Terrain\Scripts\Editor\Tools\RealWorldTerrainAlphamapExporter.cs" />
+    <Compile Include="Assets\Infinity Code\Real World Terrain\Scripts\Editor\Tools\RealWorldTerrainAlphamapImporter.cs" />
+    <Compile Include="Assets\Infinity Code\Real World Terrain\Scripts\Editor\Tools\RealWorldTerrainBuildingManager.cs" />
+    <Compile Include="Assets\Infinity Code\Real World Terrain\Scripts\Editor\Tools\RealWorldTerrainColorBalance.cs" />
+    <Compile Include="Assets\Infinity Code\Real World Terrain\Scripts\Editor\Tools\RealWorldTerrainColorItem.cs" />
+    <Compile Include="Assets\Infinity Code\Real World Terrain\Scripts\Editor\Tools\RealWorldTerrainColorLevels.cs" />
+    <Compile Include="Assets\Infinity Code\Real World Terrain\Scripts\Editor\Tools\RealWorldTerrainCurrentLatLon.cs" />
+    <Compile Include="Assets\Infinity Code\Real World Terrain\Scripts\Editor\Tools\RealWorldTerrainDetailmapExporter.cs" />
+    <Compile Include="Assets\Infinity Code\Real World Terrain\Scripts\Editor\Tools\RealWorldTerrainDetailmapImporter.cs" />
+    <Compile Include="Assets\Infinity Code\Real World Terrain\Scripts\Editor\Tools\RealWorldTerrainErosionFilter.cs" />
+    <Compile Include="Assets\Infinity Code\Real World Terrain\Scripts\Editor\Tools\RealWorldTerrainGeocodingWindow.cs" />
+    <Compile Include="Assets\Infinity Code\Real World Terrain\Scripts\Editor\Tools\RealWorldTerrainGrassGeneratorWindow.cs" />
+    <Compile Include="Assets\Infinity Code\Real World Terrain\Scripts\Editor\Tools\RealWorldTerrainHeightmapExporter.cs" />
+    <Compile Include="Assets\Infinity Code\Real World Terrain\Scripts\Editor\Tools\RealWorldTerrainHeightmapImporter.cs" />
+    <Compile Include="Assets\Infinity Code\Real World Terrain\Scripts\Editor\Tools\RealWorldTerrainHUEWindow.cs" />
+    <Compile Include="Assets\Infinity Code\Real World Terrain\Scripts\Editor\Tools\RealWorldTerrainMeshOBJExporter.cs" />
+    <Compile Include="Assets\Infinity Code\Real World Terrain\Scripts\Editor\Tools\RealWorldTerrainObjectPlacerWindow.cs" />
+    <Compile Include="Assets\Infinity Code\Real World Terrain\Scripts\Editor\Tools\RealWorldTerrainPOIManager.cs" />
+    <Compile Include="Assets\Infinity Code\Real World Terrain\Scripts\Editor\Tools\RealWorldTerrainReverseGeocodingWindow.cs" />
+    <Compile Include="Assets\Infinity Code\Real World Terrain\Scripts\Editor\Tools\RealWorldTerrainScalerWindow.cs" />
+    <Compile Include="Assets\Infinity Code\Real World Terrain\Scripts\Editor\Tools\RealWorldTerrainSplatPrototypeGenerator.cs" />
+    <Compile Include="Assets\Infinity Code\Real World Terrain\Scripts\Editor\Tools\RealWorldTerrainSplatPrototypeItem.cs" />
+    <Compile Include="Assets\Infinity Code\Real World Terrain\Scripts\Editor\Tools\RealWorldTerrainUpdateNeighbors.cs" />
+    <Compile Include="Assets\Infinity Code\Real World Terrain\Scripts\Editor\Utils\RealWorldTerrainEditorUtils.cs" />
+    <Compile Include="Assets\Infinity Code\Real World Terrain\Scripts\Editor\Utils\RealWorldTerrainGUIUtils.cs" />
+    <Compile Include="Assets\Infinity Code\Real World Terrain\Scripts\Editor\Utils\RealWorldTerrainImporter.cs" />
+    <Compile Include="Assets\Infinity Code\Real World Terrain\Scripts\Editor\Utils\RealWorldTerrainOSMUtils.cs" />
+    <Compile Include="Assets\Infinity Code\Real World Terrain\Scripts\Editor\Utils\RealWorldTerrainPackageManager.cs" />
+    <Compile Include="Assets\Infinity Code\Real World Terrain\Scripts\Editor\Utils\RealWorldTerrainPrefs.cs" />
+    <Compile Include="Assets\Infinity Code\Real World Terrain\Scripts\Editor\Utils\RealWorldTerrainResources.cs" />
+    <Compile Include="Assets\Infinity Code\Real World Terrain\Scripts\Editor\Windows\RealWorldTerrainAboutWindow.cs" />
+    <Compile Include="Assets\Infinity Code\Real World Terrain\Scripts\Editor\Windows\RealWorldTerrainBuildRPresetsWindow.cs" />
+    <Compile Include="Assets\Infinity Code\Real World Terrain\Scripts\Editor\Windows\RealWorldTerrainClearCacheWindow.cs" />
+    <Compile Include="Assets\Infinity Code\Real World Terrain\Scripts\Editor\Windows\RealWorldTerrainHistoryWindow.cs" />
+    <Compile Include="Assets\Infinity Code\Real World Terrain\Scripts\Editor\Windows\RealWorldTerrainMemoryUsageWindow.cs" />
+    <Compile Include="Assets\Infinity Code\Real World Terrain\Scripts\Editor\Windows\RealWorldTerrainSettingsGeneratorWindow.cs" />
+    <Compile Include="Assets\Infinity Code\Real World Terrain\Scripts\Editor\Windows\RealWorldTerrainSettingsWindow.cs" />
+    <Compile Include="Assets\Infinity Code\Real World Terrain\Scripts\Editor\Windows\RealWorldTerrainUpdaterWindow.cs" />
+    <Compile Include="Assets\Infinity Code\Real World Terrain\Scripts\Editor\Windows\RealWorldTerrainWindow.cs" />
+    <Compile Include="Assets\Tools\TerrainRotator\Editor\TerrainRotator.cs" />
     <Reference Include="Unity.Timeline.Editor">
-      <HintPath>C:/Users/jjack/Documents/Development/NASA-RCDX/UDP Receiver/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
+      <HintPath>D:/Development/NASA-RCDX/UDP Receiver/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>
     <Reference Include="com.unity.multiplayer-hlapi.Editor">
-      <HintPath>C:/Users/jjack/Documents/Development/NASA-RCDX/UDP Receiver/Library/ScriptAssemblies/com.unity.multiplayer-hlapi.Editor.dll</HintPath>
+      <HintPath>D:/Development/NASA-RCDX/UDP Receiver/Library/ScriptAssemblies/com.unity.multiplayer-hlapi.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.TextMeshPro.Editor">
+      <HintPath>D:/Development/NASA-RCDX/UDP Receiver/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.PackageManagerUI.Editor">
+      <HintPath>D:/Development/NASA-RCDX/UDP Receiver/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Timeline">
-      <HintPath>C:/Users/jjack/Documents/Development/NASA-RCDX/UDP Receiver/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
+      <HintPath>D:/Development/NASA-RCDX/UDP Receiver/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.CollabProxy.Editor">
+      <HintPath>D:/Development/NASA-RCDX/UDP Receiver/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Postprocessing.Editor">
+      <HintPath>D:/Development/NASA-RCDX/UDP Receiver/Library/ScriptAssemblies/Unity.Postprocessing.Editor.dll</HintPath>
     </Reference>
     <Reference Include="com.unity.multiplayer-weaver.Editor">
-      <HintPath>C:/Users/jjack/Documents/Development/NASA-RCDX/UDP Receiver/Library/ScriptAssemblies/com.unity.multiplayer-weaver.Editor.dll</HintPath>
+      <HintPath>D:/Development/NASA-RCDX/UDP Receiver/Library/ScriptAssemblies/com.unity.multiplayer-weaver.Editor.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.XR.LegacyInputHelpers">
-      <HintPath>C:/Users/jjack/Documents/Development/NASA-RCDX/UDP Receiver/Library/ScriptAssemblies/UnityEngine.XR.LegacyInputHelpers.dll</HintPath>
+      <HintPath>D:/Development/NASA-RCDX/UDP Receiver/Library/ScriptAssemblies/UnityEngine.XR.LegacyInputHelpers.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Postprocessing.Runtime">
+      <HintPath>D:/Development/NASA-RCDX/UDP Receiver/Library/ScriptAssemblies/Unity.Postprocessing.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.SpatialTracking">
-      <HintPath>C:/Users/jjack/Documents/Development/NASA-RCDX/UDP Receiver/Library/ScriptAssemblies/UnityEditor.SpatialTracking.dll</HintPath>
+      <HintPath>D:/Development/NASA-RCDX/UDP Receiver/Library/ScriptAssemblies/UnityEditor.SpatialTracking.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.SpatialTracking">
-      <HintPath>C:/Users/jjack/Documents/Development/NASA-RCDX/UDP Receiver/Library/ScriptAssemblies/UnityEngine.SpatialTracking.dll</HintPath>
+      <HintPath>D:/Development/NASA-RCDX/UDP Receiver/Library/ScriptAssemblies/UnityEngine.SpatialTracking.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.TextMeshPro">
+      <HintPath>D:/Development/NASA-RCDX/UDP Receiver/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Analytics.DataPrivacy">
+      <HintPath>D:/Development/NASA-RCDX/UDP Receiver/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.XR.LegacyInputHelpers">
-      <HintPath>C:/Users/jjack/Documents/Development/NASA-RCDX/UDP Receiver/Library/ScriptAssemblies/UnityEditor.XR.LegacyInputHelpers.dll</HintPath>
+      <HintPath>D:/Development/NASA-RCDX/UDP Receiver/Library/ScriptAssemblies/UnityEditor.XR.LegacyInputHelpers.dll</HintPath>
     </Reference>
     <Reference Include="com.unity.multiplayer-hlapi.Runtime">
-      <HintPath>C:/Users/jjack/Documents/Development/NASA-RCDX/UDP Receiver/Library/ScriptAssemblies/com.unity.multiplayer-hlapi.Runtime.dll</HintPath>
+      <HintPath>D:/Development/NASA-RCDX/UDP Receiver/Library/ScriptAssemblies/com.unity.multiplayer-hlapi.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AIModule">
       <HintPath>D:/Program Files/Unity/2019.1.1f1/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
@@ -314,28 +412,31 @@
       <HintPath>C:/Program Files (x86)/Microsoft Visual Studio Tools for Unity/15.0/Editor/SyntaxTree.VisualStudio.Unity.Bridge.dll</HintPath>
     </Reference>
     <Reference Include="NasaReader">
-      <HintPath>C:/Users/jjack/Documents/Development/NASA-RCDX/UDP Receiver/Assets/NasaReader.dll</HintPath>
+      <HintPath>D:/Development/NASA-RCDX/UDP Receiver/Assets/NasaReader.dll</HintPath>
+    </Reference>
+    <Reference Include="Zip">
+      <HintPath>D:/Development/NASA-RCDX/UDP Receiver/Assets/Infinity Code/Real World Terrain/Zip.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.Advertisements">
-      <HintPath>C:/Users/jjack/Documents/Development/NASA-RCDX/UDP Receiver/Library/PackageCache/com.unity.ads@2.3.1/Editor/UnityEditor.Advertisements.dll</HintPath>
+      <HintPath>D:/Development/NASA-RCDX/UDP Receiver/Library/PackageCache/com.unity.ads@2.3.1/Editor/UnityEditor.Advertisements.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.Advertisements">
-      <HintPath>C:/Users/jjack/Documents/Development/NASA-RCDX/UDP Receiver/Library/PackageCache/com.unity.ads@2.3.1/Runtime/UnityEngine.Advertisements.dll</HintPath>
+      <HintPath>D:/Development/NASA-RCDX/UDP Receiver/Library/PackageCache/com.unity.ads@2.3.1/Runtime/UnityEngine.Advertisements.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.Advertisements.Editor">
-      <HintPath>C:/Users/jjack/Documents/Development/NASA-RCDX/UDP Receiver/Library/PackageCache/com.unity.ads@2.3.1/Runtime/UnityEngine.Advertisements.Editor.dll</HintPath>
+      <HintPath>D:/Development/NASA-RCDX/UDP Receiver/Library/PackageCache/com.unity.ads@2.3.1/Runtime/UnityEngine.Advertisements.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.Editor">
-      <HintPath>C:/Users/jjack/Documents/Development/NASA-RCDX/UDP Receiver/Library/PackageCache/com.unity.analytics@3.3.2/Unity.Analytics.Editor.dll</HintPath>
+      <HintPath>D:/Development/NASA-RCDX/UDP Receiver/Library/PackageCache/com.unity.analytics@3.3.2/Unity.Analytics.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.StandardEvents">
-      <HintPath>C:/Users/jjack/Documents/Development/NASA-RCDX/UDP Receiver/Library/PackageCache/com.unity.analytics@3.3.2/Unity.Analytics.StandardEvents.dll</HintPath>
+      <HintPath>D:/Development/NASA-RCDX/UDP Receiver/Library/PackageCache/com.unity.analytics@3.3.2/Unity.Analytics.StandardEvents.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.Tracker">
-      <HintPath>C:/Users/jjack/Documents/Development/NASA-RCDX/UDP Receiver/Library/PackageCache/com.unity.analytics@3.3.2/Unity.Analytics.Tracker.dll</HintPath>
+      <HintPath>D:/Development/NASA-RCDX/UDP Receiver/Library/PackageCache/com.unity.analytics@3.3.2/Unity.Analytics.Tracker.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.Purchasing">
-      <HintPath>C:/Users/jjack/Documents/Development/NASA-RCDX/UDP Receiver/Library/PackageCache/com.unity.purchasing@2.0.6/Editor/UnityEditor.Purchasing.dll</HintPath>
+      <HintPath>D:/Development/NASA-RCDX/UDP Receiver/Library/PackageCache/com.unity.purchasing@2.0.6/Editor/UnityEditor.Purchasing.dll</HintPath>
     </Reference>
     <Reference Include="mscorlib">
       <HintPath>D:/Program Files/Unity/2019.1.1f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/mscorlib.dll</HintPath>
@@ -696,14 +797,6 @@
     <ProjectReference Include="Assembly-CSharp.csproj">
       <Project>{726F2137-A4C8-B97B-E63F-5AA8CAD04D05}</Project>
       <Name>Assembly-CSharp</Name>
-    </ProjectReference>
-    <ProjectReference Include="Unity.Postprocessing.Editor.csproj">
-      <Project>{5C4B1450-7CA6-945C-53FA-5801043FB64F}</Project>
-      <Name>Unity.Postprocessing.Editor</Name>
-    </ProjectReference>
-    <ProjectReference Include="Unity.Postprocessing.Runtime.csproj">
-      <Project>{D95BB9F1-A1C0-D375-307B-795AEA732CD2}</Project>
-      <Name>Unity.Postprocessing.Runtime</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
